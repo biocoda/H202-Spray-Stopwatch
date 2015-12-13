@@ -13,6 +13,10 @@
 		10B565781B70CDE60058C181 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10B565771B70CDE60058C181 /* Images.xcassets */; };
 		10B5657B1B70CDE60058C181 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10B565791B70CDE60058C181 /* LaunchScreen.xib */; };
 		10B565871B70CDE60058C181 /* H202_Spray_StopwatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B565861B70CDE60058C181 /* H202_Spray_StopwatchTests.swift */; };
+		10BC1A9D1C1DF64600A11B7D /* BlackResetButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 10BC1A991C1DF64600A11B7D /* BlackResetButton.png */; };
+		10BC1A9E1C1DF64600A11B7D /* GreyResetButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 10BC1A9A1C1DF64600A11B7D /* GreyResetButton.png */; };
+		10BC1A9F1C1DF64600A11B7D /* StartButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 10BC1A9B1C1DF64600A11B7D /* StartButton.png */; };
+		10BC1AA01C1DF64600A11B7D /* StopButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 10BC1A9C1C1DF64600A11B7D /* StopButton.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		10B565801B70CDE60058C181 /* H202-Spray-StopwatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "H202-Spray-StopwatchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10B565851B70CDE60058C181 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10B565861B70CDE60058C181 /* H202_Spray_StopwatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H202_Spray_StopwatchTests.swift; sourceTree = "<group>"; };
+		10BC1A991C1DF64600A11B7D /* BlackResetButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlackResetButton.png; sourceTree = "<group>"; };
+		10BC1A9A1C1DF64600A11B7D /* GreyResetButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GreyResetButton.png; sourceTree = "<group>"; };
+		10BC1A9B1C1DF64600A11B7D /* StartButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StartButton.png; sourceTree = "<group>"; };
+		10BC1A9C1C1DF64600A11B7D /* StopButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StopButton.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,7 @@
 		10B5656D1B70CDE60058C181 /* H202-Spray-Stopwatch */ = {
 			isa = PBXGroup;
 			children = (
+				10B565901B70CE910058C181 /* ButtonImages */,
 				10B565701B70CDE60058C181 /* AppDelegate.swift */,
 				10B565721B70CDE60058C181 /* ViewController.swift */,
 				10B565741B70CDE60058C181 /* Main.storyboard */,
@@ -110,6 +119,17 @@
 				10B565851B70CDE60058C181 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		10B565901B70CE910058C181 /* ButtonImages */ = {
+			isa = PBXGroup;
+			children = (
+				10BC1A991C1DF64600A11B7D /* BlackResetButton.png */,
+				10BC1A9A1C1DF64600A11B7D /* GreyResetButton.png */,
+				10BC1A9B1C1DF64600A11B7D /* StartButton.png */,
+				10BC1A9C1C1DF64600A11B7D /* StopButton.png */,
+			);
+			name = ButtonImages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,11 +176,14 @@
 		10B565631B70CDE60058C181 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Paul Osman";
 				TargetAttributes = {
 					10B5656A1B70CDE60058C181 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 6QL7PHG9B5;
 					};
 					10B5657F1B70CDE60058C181 = {
 						CreatedOnToolsVersion = 6.4;
@@ -192,9 +215,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10BC1A9E1C1DF64600A11B7D /* GreyResetButton.png in Resources */,
 				10B565761B70CDE60058C181 /* Main.storyboard in Resources */,
 				10B5657B1B70CDE60058C181 /* LaunchScreen.xib in Resources */,
 				10B565781B70CDE60058C181 /* Images.xcassets in Resources */,
+				10BC1A9F1C1DF64600A11B7D /* StartButton.png in Resources */,
+				10BC1AA01C1DF64600A11B7D /* StopButton.png in Resources */,
+				10BC1A9D1C1DF64600A11B7D /* BlackResetButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +303,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -342,9 +370,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "H202-Spray-Stopwatch/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "osman.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -352,9 +384,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "H202-Spray-Stopwatch/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "osman.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -372,6 +408,7 @@
 				);
 				INFOPLIST_FILE = "H202-Spray-StopwatchTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "osman.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/H202-Spray-Stopwatch.app/H202-Spray-Stopwatch";
 			};
@@ -387,6 +424,7 @@
 				);
 				INFOPLIST_FILE = "H202-Spray-StopwatchTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "osman.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/H202-Spray-Stopwatch.app/H202-Spray-Stopwatch";
 			};
@@ -411,6 +449,7 @@
 				10B5658C1B70CDE60058C181 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		10B5658D1B70CDE60058C181 /* Build configuration list for PBXNativeTarget "H202-Spray-StopwatchTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +458,7 @@
 				10B5658F1B70CDE60058C181 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
